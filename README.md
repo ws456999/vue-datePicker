@@ -37,36 +37,36 @@ components: {
 ```
 ### props
 
-**defaultValue**
+>**defaultValue**
 
 - dateDefault: { type: Array, default: [] },
 
 - need a array like: ['2011-11-11'],
 
-**isDateRange**
+>**isDateRange**
 
 - isRange: { type: Boolean, default: false }
 
-**inputWidth**
+>**inputWidth**
 
 - width: { type: String, default: '250px' },
 
-**placeholder**
+>**placeholder**
 
 - placeholder: {type: String, default: ''},
 
-**readonly**
+>**readonly**
 
 - readonly: { type: Boolean, default: true },
 
-**dateFormat**
+>**dateFormat**
 
 - format: { type: String, default: 'YYYY-MM-DD' },
 
-**inputName**
+>**inputName**
 
 - name: { type: String, default: '' },
 
-**clickCallback**
+>**clickCallback**
 
 - myclick: { type: Function },
