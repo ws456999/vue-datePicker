@@ -1,7 +1,8 @@
 {
   "name": "vue-date-selector",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "vue-dateSelector for vue 2.0",
+  "private": false,
   "author": "wr",
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -11,6 +12,7 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
+  "main": "./dist/MyDate.vue",
   "dependencies": {
     "vue": "^2.1.0"
   },

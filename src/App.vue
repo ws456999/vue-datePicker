@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import MyDate from './components/MyDate'
+import myDate from 'components/myDate'
 
 export default {
   name: 'app',
@@ -25,7 +25,7 @@ export default {
     }
   },
   components: {
-    MyDate
+    myDate
   }
 }
 </script>
