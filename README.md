@@ -31,42 +31,27 @@ components: {
 <!--datePicker-->
 <date-selector :date-default="time" :is-range=false></date-selector>
 
-<!--datePicker-->
+<!--dateRangePicker-->
 <date-selector :date-default="time" :is-range=true></date-selector>
 
 ```
-### props
+## props
 
->**defaultValue**
+````
+dateDefault: { type: Array, default: [] }, // need a Array like: ['2016-11-11'] or ['2016-11-11', '2016-11-22'],
 
-- dateDefault: { type: Array, default: [] },
+isRange: { type: Boolean, default: false }, // isrange option
 
-- need a array like: ['2011-11-11'],
+width: { type: String, default: '250px' },  // inputWidth
 
->**isDateRange**
+placeholder: {type: String, default: ''},
 
-- isRange: { type: Boolean, default: false }
+readonly: { type: Boolean, default: true },
 
->**inputWidth**
+format: { type: String, default: 'YYYY-MM-DD' },   // dateFormat
 
-- width: { type: String, default: '250px' },
+name: { type: String, default: '' },
 
->**placeholder**
+myclick: { type: Function }, // Callback
 
-- placeholder: {type: String, default: ''},
-
->**readonly**
-
-- readonly: { type: Boolean, default: true },
-
->**dateFormat**
-
-- format: { type: String, default: 'YYYY-MM-DD' },
-
->**inputName**
-
-- name: { type: String, default: '' },
-
->**clickCallback**
-
-- myclick: { type: Function },
+````
