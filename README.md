@@ -6,7 +6,7 @@
 
   The demo page is [HERE](https://ws456999.github.io/vue-dateSelector/).
   
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/ws456999/vue-dateSelector/blob/master/screenshot.png)
 
 # Installation
 
