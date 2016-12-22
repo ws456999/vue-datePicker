@@ -1,6 +1,21 @@
+# vue-dateSelector
+
+> vue-dateSelector for vue2.0
+
 # demo
 
-> A Vue.js project
+  The demo page is [HERE](https://ws456999.github.io/vue-dateSelector/).
+  
+![image](screenshot.png)
+
+# Installation
+
+## npm
+
+```shell
+$ npm install --save vue-date-selector
+```
+
 
 ## Build Setup
 

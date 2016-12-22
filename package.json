@@ -1,9 +1,8 @@
 {
-  "name": "demo",
+  "name": "vue-date-selector",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "vue-dateSelector for vue 2.0",
   "author": "wr",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
