@@ -1,6 +1,10 @@
 {
   "name": "vue-date-selector",
+<<<<<<< HEAD
   "version": "1.0.4",
+=======
+  "version": "1.0.2",
+>>>>>>> 0abd4b73c53d33a8b007127c23afea7dc3f5b83b
   "description": "vue-dateSelector for vue 2.0",
   "private": false,
   "author": "wr",
