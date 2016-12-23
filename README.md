@@ -4,9 +4,9 @@
 
 # demo
 
-  The demo page is [HERE](https://ws456999.github.io/vue-dateSelector/).
+  The demo page is [HERE](https://ws456999.github.io/vue-datePicker/).
   
-![image](screenshot.png)
+![Screenshot](screenshot.png)
 
 # Installation
 
@@ -17,26 +17,65 @@ $ npm install --save vue-date-selector
 ```
 
 
-## Build Setup
+## Usage
 
-``` bash
-# install dependencies
-npm install
+```javaScript
+import DateSelector from 'vue-date-selector'
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+components: {
+  DateSelector
+}
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+```html
+
+<!--datePicker-->
+<date-selector :date-default="time" :is-range=false></date-selector>
+`
+<!--dateRangePicker-->
+<date-selector :date-default="time" :is-range=true></date-selector>
+
+<!--if you need sync feature-->
+<date-selector :date-default="time" :is-range=true @on-date-change="onDateChange"></date-selector>
+  methods: {
+    onDateChange (val) {
+      this.time = val // 外层调用组件方注册变更方法，将组件内的数据变更，同步到组件外的数据状态中
+    }
+  }
+
+```
+### props
+
+**defaultValue**
+
+- dateDefault: { type: Array, default: [] },
+
+- need a array like: ['2011-11-11'],
+
+**isDateRange**
+
+- isRange: { type: Boolean, default: false }
+
+**inputWidth**
+
+- width: { type: String, default: '250px' },
+
+**placeholder**
+
+- placeholder: {type: String, default: ''},
+
+**readonly**
+
+- readonly: { type: Boolean, default: true },
+
+**dateFormat**
+
+- format: { type: String, default: 'YYYY-MM-DD' },
+
+**inputName**
+
+- name: { type: String, default: '' },
+
+**clickCallback**
+
+- myclick: { type: Function },
